@@ -1,0 +1,334 @@
+body{
+    font-family: sans-serif;
+    color: #373737;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu{
+    display: block;
+}
+
+.menu-list{
+    list-style: none;
+}
+
+.menu-list-item{
+    display: inline-block;
+}
+
+.menu-list-item a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #373737;
+    margin-right: 30px;
+}
+
+.menu-list-item a:hover{
+    text-decoration: underline;
+    text-decoration-color:#373737;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.logo-container img{
+    width: 120px;
+}
+
+/* MAIN BANNER */
+
+.main-banner img{
+    width: 100%;
+}
+
+/*INFORMATION*/
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 50px 30px 50px;
+}
+
+.info_Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side_Logo {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.info_Text {
+    padding-left: 20px;
+}
+
+.info_Text p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.info_Text h2 {
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 0px;
+}
+
+/* Collections */
+
+.collections{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.collection{
+    position: relative;
+}
+
+.collection img{
+    width: 450px;
+}
+
+.collection-description{
+    position:absolute;
+    top:115px;
+    left: 30px;
+}
+
+.collection-description-buy{
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 0 0 10px 0;
+}
+
+.collection-description-text{
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+/* PERSONALIZED PACKS */
+/*el texto no se ajusta con el imagen*/
+
+.packs_Container {
+    position: relative;
+    margin: 20px;
+}
+
+.packs_Container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 500;
+}
+
+.packs_Text {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    margin-bottom: 50px;
+    z-index: 1000;
+}
+
+.packs_Tagintro {
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0 0 10 0;
+}
+
+.packs_Tagline {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.packs_Units {
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 10 0 0 0;
+}
+
+.packs_Button {
+    background-color: #373737;
+    border: none;
+    color: #fff;
+    font-weight: lighter;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.packs_Button:hover{
+    background-color: #fff;
+    color: #373737;
+    border: solid 1px #373737;
+    cursor: pointer;
+}
+
+
+
+/* NOVEDADES */
+
+.title_Container {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.title_NewArrivals {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.title_NewArrivals h2 {
+    font-size: 20px;
+}
+
+.title_NewArrivals p {
+    font-size: 18px;
+}
+
+/*BANNER - GRID */
+.socks_NewArrivals {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/*CSS (buscando por internet: https://www.youtube.com/watch?v=rnhoY5Cdmy0&ab_channel=dcode */
+
+.socks_GridPro {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.socks_GridPro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.socks_GridCol {
+    grid-column: span 2;
+}
+
+.socks_GridRow {
+    grid-row: span 2;
+}
+
+@media screen and (max-with: 1024px) {
+    .socks_GridPro {
+    --num-cols: 2;
+    --row-height: 200px;
+    }
+}
+
+
+/*Codigo hecho con CSS basico - Los imagenes no quedaban cuadrados; buscando otra forma con google*/
+/*
+.socks_Main img {
+    height: 650px;
+    width: 650px;
+    margin-right: 20px;
+}
+
+.socks_Grid {
+    display: inline-block;
+    width: 700px;
+    height: 700px;
+}
+
+.socks_Grid img {
+    display: inline-block;
+    width: 320px;
+    height: 320;
+    padding: 5px;
+}
+*/
+
+/*FORMS*/
+.newsletter_Container {
+    height: 130px;
+    width: 100%;
+}
+
+.newsletter_Content {
+    justify-content: center;
+    display: inline;
+    text-align: center;
+}
+
+.newsletter_Text {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter_Text h2 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.newsletter_Text p {
+    font-size: 12px;
+}
+
+.email_Input {
+    font-size: 10px;
+    font-weight: 200;
+    color: #373737;
+    border: solid 1px #b9b9b9;
+    padding: 12px;
+    width: 350px;
+}
+
+.email_Input:focus {
+    outline: none;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    background-color: #f8f6f7;
+}
+
+.copyright {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.terms p {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 20px;
+    border-left: solid 1px #b9b9b9;
+}
